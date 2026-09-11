@@ -7,6 +7,17 @@ pre-1.0 caveat that minor versions may include breaking changes. Starting with
 `1.0.0-alpha.0`, package pre-releases track ACP v2 draft work; the wire protocol
 for draft v2 may still change before ACP v2 stabilizes.
 
+## [0.5.2-opencara.1] - 2026-09-11
+
+OpenCara compatibility build distributed as an installable npm tarball on
+the quabug/agy-acp GitHub release, not the upstream npm channel.
+
+### Fixed
+
+- Consume generation metadata field 17 alongside field 4 when reading agy 1.1.27+ conversation databases.
+- Let print-mode reviews finish beyond five minutes: default to 30 minutes and accept `--print-timeout` or `AGY_PRINT_TIMEOUT` overrides.
+- Report agy's print-timeout diagnostic as an error even when the CLI returns exit code 0 and partial output.
+
 ## [0.5.2] - 2026-08-19
 
 ### Added
